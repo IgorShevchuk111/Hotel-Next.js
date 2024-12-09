@@ -1,6 +1,8 @@
-import Counter from '../_components/Counter';
+export const metadata = {
+  title: 'Cabins',
+};
 
-export default function page() {
+export default function Page() {
   return (
     <div>
       <h1>Cabin page</h1>
