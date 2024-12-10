@@ -8,6 +8,7 @@ function Logo() {
       <Image
         src={logo}
         quality={100}
+        priority
         height="60"
         width="60"
         alt="The Wild Oasis logo"
