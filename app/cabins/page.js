@@ -2,6 +2,9 @@ import CabinList from '../_components/CabinList';
 import { Suspense } from 'react';
 import Spinner from '../_components/Spinner';
 
+export const revalidate = 3600; // This can be used at the route level for pages.  Always fetch fresh data
+// export const revalidate = 0;
+
 export const metadata = {
   title: 'Cabins',
 };
