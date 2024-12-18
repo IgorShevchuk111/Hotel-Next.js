@@ -37,12 +37,7 @@ export default async function Navigation() {
                   referrerPolicy="no-referrer"
                 />
               </span>
-              <Link
-                href="/account"
-                className="hover:text-accent-400 transition-colors"
-              >
-                Guest area
-              </Link>
+              Guest area
             </Link>
           ) : (
             <Link
