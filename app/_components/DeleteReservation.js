@@ -11,7 +11,7 @@ function DeleteReservation({ bookingId }) {
     if (confirm('Are you sure you want to delete this reservation?'))
       startTransiction(() => deleteReservation(bookingId));
   }
-  console.log(isPending);
+
   return (
     <button
       onClick={handleDelete}
