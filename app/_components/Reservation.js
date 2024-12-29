@@ -18,7 +18,11 @@ async function Reservation({ cabin }) {
         cabin={cabin}
       />
       {session?.user ? (
-        <ReservationForm user={session.user} cabin={cabin} />
+        <ReservationForm
+          user={session.user}
+          cabin={cabin}
+          bookedDates={bookedDates}
+        />
       ) : (
         <LoginMessage />
       )}

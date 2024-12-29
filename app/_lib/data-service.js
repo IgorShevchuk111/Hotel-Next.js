@@ -93,7 +93,6 @@ export async function getBookedDatesByCabinId(cabinId) {
   let today = new Date();
   today.setUTCHours(0, 0, 0, 0);
   today = today.toISOString();
-
   // Getting all bookings
   const { data, error } = await supabase
     .from('bookings')
@@ -150,21 +149,6 @@ export async function createGuest(newGuest) {
   if (error) {
     console.error(error);
     throw new Error('Guest could not be created');
-  }
-
-  return data;
-}
-
-export async function createBooking(newBooking) {
-  const { data, error } = await supabase
-    .from('bookings')
-    .insert([newBooking])
-    .select()
-    .single();
-
-  if (error) {
-    console.error(error);
-    throw new Error('Booking could not be created');
   }
 
   return data;
